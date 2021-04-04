@@ -73,8 +73,8 @@ public class Desafio3 {
             if (regras.contar == 2 && x != '<' && x != '>') {
                 regras.variavel += x;
             }
-            if (i == 0 && x == '<') {
-                //  conteudo+="{"+"\n";
+            if ( regras.contar == 0 && x == '<') {
+                  conteudo+="{"+"\n";
                 count++;
                 regras.contar2 = regras.contar2 + 1;
             }
