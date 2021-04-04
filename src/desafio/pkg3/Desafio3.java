@@ -38,9 +38,9 @@ public class Desafio3 {
         regras.contar2 = 0;
         regras.variavel = "";
         try {
-            arq = new FileWriter("./src/Saida.txt");
+            arq = new FileWriter("./src/Exemplo de JSON.txt");
             pw = new PrintWriter(arq);
-            scan = new Scanner(new File("./src/XML Exemplo.xml"), "UTF-8");
+            scan = new Scanner(new File("./src/Exemplo de XML.xml"), "UTF-8");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -51,7 +51,7 @@ public class Desafio3 {
             String conteudo = estaValido(line);
             // Chamando a fun��o passando a express�o como par�metro
 
-            pw.write(conteudo);
+            pw.write("\n"+conteudo);
             System.out.println(conteudo);
             pw.flush();
         }
